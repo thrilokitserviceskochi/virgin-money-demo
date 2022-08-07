@@ -1,0 +1,6 @@
+framework module Pods_VMDTests {
+  umbrella header "Pods-VMDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

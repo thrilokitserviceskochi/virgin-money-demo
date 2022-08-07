@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="ContactCellTableViewCell" customModule="VMD" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey Aish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvS-YW-6Lr">
+                        <rect key="frame" x="88" y="16" width="256" height="147"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="aiswarya@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4H-LY-CPz">
+                        <rect key="frame" x="88" y="171" width="256" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0B-vQ-tQx">
+                        <rect key="frame" x="0.0" y="197" width="360" height="1"/>
+                        <color key="backgroundColor" red="0.78879696129999999" green="0.0031869173980000002" blue="0.04181209952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7Ar-bi-O0k"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgf-sF-BJf">
+                        <rect key="frame" x="20" y="69" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="B25-Lk-mXU"/>
+                            <constraint firstAttribute="height" constant="60" id="SgH-y5-GTh"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hv-gA-buZ">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="197"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="selectPerson:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e39-RB-iPt"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="f0B-vQ-tQx" secondAttribute="trailing" id="3Qa-pH-suK"/>
+                    <constraint firstItem="gvS-YW-6Lr" firstAttribute="leading" secondItem="fgf-sF-BJf" secondAttribute="trailing" constant="8" id="4wZ-GH-ibb"/>
+                    <constraint firstAttribute="bottom" secondItem="f0B-vQ-tQx" secondAttribute="bottom" id="DtC-cq-OZp"/>
+                    <constraint firstItem="D4H-LY-CPz" firstAttribute="trailing" secondItem="gvS-YW-6Lr" secondAttribute="trailing" id="GMU-ko-CBw"/>
+                    <constraint firstItem="gvS-YW-6Lr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="KfA-jn-aSx"/>
+                    <constraint firstItem="f0B-vQ-tQx" firstAttribute="top" secondItem="4hv-gA-buZ" secondAttribute="bottom" id="Y2x-jJ-Cck"/>
+                    <constraint firstAttribute="trailing" secondItem="4hv-gA-buZ" secondAttribute="trailing" id="Z5p-u3-es0"/>
+                    <constraint firstItem="f0B-vQ-tQx" firstAttribute="top" secondItem="D4H-LY-CPz" secondAttribute="bottom" constant="8" id="aqD-af-pVY"/>
+                    <constraint firstItem="D4H-LY-CPz" firstAttribute="top" secondItem="gvS-YW-6Lr" secondAttribute="bottom" constant="8" id="b80-Zj-DiB"/>
+                    <constraint firstItem="D4H-LY-CPz" firstAttribute="leading" secondItem="gvS-YW-6Lr" secondAttribute="leading" id="b9x-nL-5Gx"/>
+                    <constraint firstItem="fgf-sF-BJf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i12-P6-1RP"/>
+                    <constraint firstItem="f0B-vQ-tQx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iuW-Lw-pcZ"/>
+                    <constraint firstItem="4hv-gA-buZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nHV-gd-yzz"/>
+                    <constraint firstAttribute="trailing" secondItem="gvS-YW-6Lr" secondAttribute="trailing" constant="16" id="oPN-8e-f6j"/>
+                    <constraint firstItem="4hv-gA-buZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rK0-bX-MRs"/>
+                    <constraint firstItem="fgf-sF-BJf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yrU-Dm-NV3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelect" destination="4hv-gA-buZ" id="1wh-Gt-6f7"/>
+                <outlet property="lblEmail" destination="D4H-LY-CPz" id="ulu-MG-TB6"/>
+                <outlet property="lblName" destination="gvS-YW-6Lr" id="dvi-xW-6xw"/>
+                <outlet property="profileImage" destination="fgf-sF-BJf" id="ub9-RG-Fux"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
